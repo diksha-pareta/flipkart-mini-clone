@@ -6,7 +6,7 @@ A simple React-based e-commerce UI inspired by Flipkart. Includes product listin
 
 ## Live Demo
 
- [View Live Site](https://flipkart-mini-clone.netlify.app)
+ [Live](https://flipkart-mini-clone.netlify.app)
 
 >  Replace the link above with your actual deployed Netlify link.
 
