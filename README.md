@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Flipkart Mini Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React-based e-commerce UI inspired by Flipkart. Includes product listing, filtering by price and rating, and a cart feature — all built with clean React components and deployed live on Netlify.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+ [View Live Site](https://flipkart-mini-clone.netlify.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+>  Replace the link above with your actual deployed Netlify link.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-  Product listing with image, price, rating, and add-to-cart button
+-  Filter functionality (Price: Low to High, High to Low; Rating)
+-  Cart display and item tracking
+-  Instant-loading placeholder images (Base64 fallback)
+-  Fully responsive layout
+-  Deployed on Netlify with GitHub version control
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React.js (with Hooks)
+- HTML, CSS (Inline styling)
+- Git + GitHub
+- Netlify (for deployment)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Folder Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+flipkart-mini-clone/
+├── src/
+│   ├── components/
+│   │   ├── ProductCard.jsx
+│   │   ├── ProductList.jsx
+│   │   ├── FilterBar.jsx
+│   │   └── Cart.jsx
+│   ├── data/
+│   │   └── products.js
+│   ├── App.js
+│   └── index.js
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/diksha-pareta/flipkart-mini-clone.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the server:
+   ```bash
+   npm start
+   ```
+4. Visit [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Diksha Kumari Pareta**  
+ M.Tech (CSE) @ IIIT-Delhi  
+ diksha24118@iiitd.ac.in  
+ [GitHub](https://github.com/diksha-pareta)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Final Notes
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was built as part of a hands-on exercise to demonstrate frontend skills, component composition, state handling, and React-based product thinking. Ready for expansion into a fully functional product page with APIs, routing, and user sessions.
