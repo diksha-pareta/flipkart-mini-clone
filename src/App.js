@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import productsData from "./data/products";
+import ProductList from "./components/ProductList";
+import FilterBar from "./components/FilterBar";
+import Cart from "./components/Cart";
+
 
 function App() {
+  const [products, setProducts] = useState(productsData);
+  const [cart, setCart] = useState([]);
+
+  const handleAddToCart = (product) => {
+    setCart([...cart, product]);
+  };
+
+  const handleFilter = (type, value) => {
+    let sorted = [...productsData];
+    if (type === "price") {
+      sorted.sort((a, b) => value === "low" ? a.price - b.price : b.price - a.price);
+    } else if (type === "rating") {
+      sorted.sort((a, b) => b.rating - a.rating);
+    }
+    setProducts(sorted);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: 20 }}>
+      <h1>🛒 Flipkart Mini Clone</h1>
+      <FilterBar onFilter={handleFilter} />
+      <ProductList products={products} onAddToCart={handleAddToCart} />
+      <Cart cart={cart} />
     </div>
   );
 }
-
 export default App;
